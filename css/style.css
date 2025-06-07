@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-lg {
+    font-size: 3.5rem;
+}
+
+.text-md {
+    font-size: 2.5rem;
+}
+
+.text-sm {
+    font-size: 1.2rem;
+}
+
+.text-xs {
+    font-size: 1rem;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    background-color: rgb(233, 230, 230);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+/* Navigation menu bar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgb(201, 198, 198);
+    box-shadow: 1px 5px 10px rgb(226, 225, 225);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 span:first-child {
+    color: rgb(43, 43, 245);
+}
+
+.logo h2 span:last-child {
+    color: rgb(3, 126, 44);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 1rem;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: blue;
+}
+
+.login button,
+button {
+    padding: 10px 20px;
+    background-color: rgb(43, 43, 245);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Banner Section */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background-color: #F5F7FA;
+    color: rgb(75, 74, 74);
+}
+
+header div:first-child {
+    width: 30%;
+}
+
+header div:last-child {
+    width: 30%;
+}
+
+header div:last-child img {
+    width: 80%;
+}
+
+header div h1 {
+    font-size: 3rem;
+}
+
+header div p {
+    margin: 20px 0px;
+    font-size: 1.2rem;
+}
+
+/* Our Clients Section */
+.our-clients,
+.power-of-blockchain {
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    color: rgb(75, 74, 74);
+}
+
+.our-clients h2 {
+    font-size: 3rem;
+}
+
+.our-clients p {
+    margin: 20px 0px;
+    font-size: 1.2rem;
+}
+
+.our-clients div {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+/* Power of Blockchain */
+.power-of-blockchain .card-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-title {
+    font-size: 1rem;
+    padding: 20px 100px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid rgb(248, 246, 246);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 5px 10px rgb(226, 225, 225);
+    text-align: center;
+}
+
+/* Section 5: Helping Blockchain */
+.helpling-blockchain {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 50px 300px;
+    color: rgb(75, 74, 74);
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    .helpling-blockchain {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav .menu {
+        display: none;
+    }
+
+    nav .dropbtn {
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    nav .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    nav .dropdown-content {
+        width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding-bottom: 15px;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        display: none;
+        background-color: #f9f9f9;
+        padding: 12px 16px;
+    }
+
+    nav .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    nav .dropdown-content a {
+        color: black;
+        padding: 12px 0px;
+        text-decoration: none;
+        display: block;
+        text-wrap: nowrap;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+        padding: 50px;
+    }
+
+    header div:first-child {
+        width: 100%;
+    }
+
+    header div:last-child {
+        width: 100%;
+    }
+
+    .our-clients {
+        align-items: center;
+        justify-items: center;
+        padding: 50px;
+        text-align: center;
+        color: rgb(75, 74, 74);
+    }
+
+    .our-clients div {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin: 10px 0px;
+    }
+
+    .power-of-blockchain {
+        align-items: center;
+        justify-items: center;
+        padding: 50px;
+        text-align: center;
+        color: rgb(75, 74, 74);
+    }
+
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        padding: 0px;
+        gap: 30px;
+        text-align: center;
+        color: rgb(75, 74, 74);
+    }
+
+    .help-text {
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    nav .dropdown {
+        display: none;
+    }
+}
