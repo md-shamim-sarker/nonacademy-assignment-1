@@ -33,8 +33,11 @@
     display: flex;
     align-items: center;
     column-gap: 20px;
-    justify-content: space-evenly;
-    background-color: rgb(233, 230, 230);
+    justify-content: center;
+}
+
+.bg-gray {
+    background-color: aliceblue;
 }
 
 .grid {
@@ -188,6 +191,62 @@ header div p {
     color: rgb(75, 74, 74);
 }
 
+/* Future Blockchain */
+.future-blockchain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 300px;
+    color: rgb(75, 74, 74);
+}
+
+.future-cards {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 50px 300px;
+    color: rgb(75, 74, 74);
+}
+
+.future-card-one {
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(248, 246, 246);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 5px 10px rgb(226, 225, 225);
+    text-align: center;
+}
+
+.future-card-two {
+    position: relative;
+    top: -100px;
+    left: 15px;
+    width: 220px;
+    border: 1px solid rgb(248, 246, 246);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 5px 10px rgb(226, 225, 225);
+    text-align: center;
+    background-color: #F5F7FA;
+}
+
+.future-card-two:hover {
+    background-color: #d1d2d4;
+}
+
+.future-cards img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
 /* Media Query */
 @media only screen and (max-width: 600px) {
     .helpling-blockchain {
@@ -299,7 +358,49 @@ header div p {
     .help-text {
         padding: 20px 20px;
     }
+
+    /* Future Blockchain */
+    .future-blockchain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        /* padding: 30px 300px; */
+        color: rgb(75, 74, 74);
+    }
+
+    .future-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* row-gap: 50px; */
+        /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center;
+            padding: 50px 300px;
+            color: rgb(75, 74, 74); */
+    }
+
+    .future-card-one {
+        width: 150px;
+        border: 1px solid rgb(248, 246, 246);
+        border-radius: 8px;
+        box-shadow: 1px 5px 10px rgb(226, 225, 225);
+        text-align: center;
+    }
+
+    .future-card-two {
+        top: -100px;
+        left: 15px;
+        width: 125px;
+        border: 1px solid rgb(248, 246, 246);
+        border-radius: 8px;
+        box-shadow: 1px 5px 10px rgb(226, 225, 225);
+        text-align: center;
+        background-color: #F5F7FA;
+    }
 }
+
 
 @media only screen and (min-width: 600px) {
     nav {
