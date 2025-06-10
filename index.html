@@ -1,163 +1,260 @@
-<!-- 
-Author: Md. Shamim Sarker
-Student ID: NA-A86CC4
-Course: Fullstack Blockchain Development Course
-Assignment: Assignment 1
-Name: Responsive Landing Page Design 
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/na.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Mahfuz Enterprise</title>
+    <title>NonAcademy</title>
 </head>
 
 <body>
     <!-- Section 1: Navbar -->
     <nav>
-        <!-- Logo Part -->
-        <div class="logo">
-            <h2>
-                <span>Mahfuz</span><span>Enterprise</span>
-            </h2>
+        <div class="nav-logo">
+            <img src="/assets/na.png" alt="logo" width="30px" height="30px">
+            <h2><span style="color: red;">Non</span><span style="color:green">Academy</span></h2>
         </div>
-        <!-- Menu Part for PC -->
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-            <!-- Login Part -->
-            <div class="login">
-                <button>Login Now ➡</button>
-            </div>
+        <div class="menu-item">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Community</a>
+            <a href="#">Services</a>
+            <button>Login Now</button>
         </div>
-        <!-- Menu Part for Mobile -->
-        <div class="dropdown">
-            <button class="dropbtn">
-                <img src="/assets/menu-icon.png" alt="menu-icon" width="30px" height="30px">
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Home</a>
-                <a href="#">Blog</a>
-                <a href="#">Community</a>
-                <a href="#">Services</a>
-                <button>Login Now ➡</button>
-            </div>
+        <div class="menu-icon">
+            <img src="/assets/menu-icon.png" alt="menu" width="25px" height="25px">
         </div>
     </nav>
-    <!-- Section 1: Navbar End -->
 
-    <!-- Section 2, 3, 4, 5, 6 & 7 -->
+    <!-- Section 2: Banner -->
+    <header>
+        <div class="banner">
+            <div class="banner-content">
+                <h2>NonAcademy Institution</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, nam? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Perferendis, excepturi.</p>
+                <button>Learn More...</button>
+            </div>
+            <div class="banner-photo">
+                <img src="/assets/banner.png" alt="banner" width="100%" height="100%">
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 3 to 7 -->
     <main>
-        <!-- Section 2: Banner -->
-        <header>
-            <div>
-                <h1 class="text-lg">Building Materials HUB</h1>
-                <p class="text-sm">Building materials are substances or composites used for construction. Common
-                    examples include
-                    concrete, steel, wood,
-                    and brick, each offering unique properties like strength, insulation, or aesthetic appeal.</p>
-                <button>Learn More ➡</button>
-            </div>
-            <div>
-                <img src="/assets/banner.svg" alt="banner">
-            </div>
-        </header>
         <!-- Section 3: Our Client -->
-        <section class="our-clients">
-            <h2 class="text-md">Our Clients</h2>
-            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
-            <div>
-                <img src="/assets/logo-1.png" alt="logo-1" width="100px" height="100px">
-                <img src="/assets/logo-2.png" alt="logo-1" width="100px" height="100px">
-                <img src="/assets/logo-3.png" alt="logo-1" width="100px" height="100px">
-                <img src="/assets/logo-4.png" alt="logo-1" width="100px" height="100px">
-                <img src="/assets/logo-5.png" alt="logo-1" width="100px" height="100px">
-                <img src="/assets/logo-6.png" alt="logo-1" width="100px" height="100px">
-                <img src="/assets/logo-7.png" alt="logo-1" width="100px" height="100px">
+        <section class="client">
+            <div class="text-center">
+                <h2>Our Clients</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, fugiat?</p>
+            </div>
+            <div class="client-logo-area">
+                <div class="client-logo">
+                    <img src="/assets/logo-1.png" alt="logo" width="100%" height="100%">
+                </div>
+                <div class="client-logo">
+                    <img src="/assets/logo-2.png" alt="logo" width="100%" height="100%">
+                </div>
+                <div class="client-logo">
+                    <img src="/assets/logo-3.png" alt="logo" width="100%" height="100%">
+                </div>
+                <div class="client-logo">
+                    <img src="/assets/logo-4.png" alt="logo" width="100%" height="100%">
+                </div>
+                <div class="client-logo">
+                    <img src="/assets/logo-5.png" alt="logo" width="100%" height="100%">
+                </div>
+                <div class="client-logo">
+                    <img src="/assets/logo-6.png" alt="logo" width="100%" height="100%">
+                </div>
             </div>
         </section>
 
         <!-- Section 4: Power of Blockchain -->
-        <section class="power-of-blockchain">
-            <h2 class="text-md">Explore the Power of <br> Blockchain in Key Sectors</h2>
-            <p class="text-sm padding">Who can benefit from blockchain technology?</p>
-            <div class="card-section">
-                <div class="card">
-                    <img src="/assets/logo-1.png" alt="logo-1" width="50px" height="50px">
-                    <h2>Creator <br> Communities</h2> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, exercitationem?</p>
+        <section class="power">
+            <div class="text-center">
+                <h2>Explore the power of <br> Blockchain in Key Sectors</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus doloremque libero reiciendis quis
+                    deserunt alias eligendi nisi molestias omnis minima.</p>
+            </div>
+            <div class="power-card-area">
+                <div class="power-card text-center">
+                    <div>
+                        <img src="/assets/logo-1.png" alt="logo" width="50px" height="50px">
+                    </div>
+                    <h3>Creator Communities</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div class="card">
-                    <img src="/assets/logo-2.png" alt="logo-1" width="50px" height="50px">
-                    <h2>Creator <br> Communities</h2> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, exercitationem?</p>
+                <div class="power-card text-center">
+                    <div>
+                        <img src="/assets/logo-2.png" alt="logo" width="50px" height="50px">
+                    </div>
+                    <h3>Finantial Institutions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <div class="card">
-                    <img src="/assets/logo-3.png" alt="logo-1" width="50px" height="50px">
-                    <h2>Creator <br> Communities</h2> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, exercitationem?</p>
-                </div>
-                <div class="card">
-                    <img src="/assets/logo-4.png" alt="logo-1" width="50px" height="50px">
-                    <h2>Creator <br> Communities</h2> <br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, exercitationem?</p>
+                <div class="power-card text-center">
+                    <div>
+                        <img src="/assets/logo-3.png" alt="logo" width="50px" height="50px">
+                    </div>
+                    <h3>Supply Chain Management</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
 
             </div>
         </section>
+
         <!-- Section 5: Helping Blockchain -->
-        <section class="helpling-blockchain flex">
-            <div class="text-center help-text">
-                <h2 class="text-md">Helping Blockchain <br>Transform the World</h2>
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="grid">
-                <div class="flex">
-                    <img src="/assets/logo-1.png" alt="blockchain" width="40px" height="40px">
-                    <div>
-                        <h2>120+</h2>
-                        <p>Blockchain Networks</p>
+        <section class="help-container">
+            <div class="help">
+                <div class="help-content">
+                    <h2>Helping Blockchain <br>Transform the World</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, accusamus.</p>
+                </div>
+                <div class="help-card-area">
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <img src="/assets/logo-1.png" alt="logo" width="100%" height="100%">
+                        </div>
+                        <div>
+                            <h3>120+</h3>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <img src="/assets/logo-2.png" alt="logo" width="100%" height="100%">
+                        </div>
+                        <div>
+                            <h3>120+</h3>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <img src="/assets/logo-3.png" alt="logo" width="100%" height="100%">
+                        </div>
+                        <div>
+                            <h3>120+</h3>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
+                    </div>
+                    <div class="help-card">
+                        <div class="help-icon">
+                            <img src="/assets/logo-4.png" alt="logo" width="100%" height="100%">
+                        </div>
+                        <div>
+                            <h3>120+</h3>
+                            <p>Lorem ipsum dolor.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex">
-                    <img src="/assets/logo-1.png" alt="blockchain" width="40px" height="40px">
-                    <div>
-                        <h2>120+</h2>
-                        <p>Blockchain Networks</p>
-                    </div>
-                </div>
-                <div class="flex">
-                    <img src="/assets/logo-1.png" alt="blockchain" width="40px" height="40px">
-                    <div>
-                        <h2>120+</h2>
-                        <p>Blockchain Networks</p>
-                    </div>
-                </div>
-                <div class="flex">
-                    <img src="/assets/logo-1.png" alt="blockchain" width="40px" height="40px">
-                    <div>
-                        <h2>120+</h2>
-                        <p>Blockchain Networks</p>
-                    </div>
-                </div>
-
             </div>
         </section>
+
         <!-- Section 6: Blockchain Future -->
-        <section></section>
+        <section class="future">
+            <div class="text-center">
+                <h2>Blockchain: The foundation of the future.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta cum architecto nihil. Consequatur qui
+                    doloremque nesciunt est possimus ut enim!</p>
+            </div>
+            <div class="future-card-area">
+                <div class="future-card">
+                    <div class="photo-card">
+                        <img src="/assets/banner.png" alt="photo" width="100%" height="100%">
+                    </div>
+                    <div class="cover-card text-center">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button>Learn More...</button>
+                    </div>
+                </div>
+                <div class="future-card">
+                    <div class="photo-card">
+                        <img src="/assets/banner.png" alt="photo" width="100%" height="100%">
+                    </div>
+                    <div class="cover-card text-center">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button>Learn More...</button>
+                    </div>
+                </div>
+                <div class="future-card">
+                    <div class="photo-card">
+                        <img src="/assets/banner.png" alt="photo" width="100%" height="100%">
+                    </div>
+                    <div class="cover-card text-center">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <button>Learn More...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Section 7: Contact Us -->
-        <section></section>
+        <h2 class="text-center">Contact Us</h2>
+        <section class="contact">
+            <div class="contact-photo">
+                <img src="/assets/contact-us.jpg" alt="contact-us" width="100%" height="100%">
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@gmail.com">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <input type="text" id="message" placeholder="Message...">
+                    </div>
+                    <div>
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <!-- Section 8: Footer -->
-    <footer></footer>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>NonAcademy</h2>
+                <p>Copyright &copy NonAcademy</p>
+                <p>All rights reserved | 2025</p>
+                <div>
+                    <p>Some Social Links</p>
+                </div>
+            </div>
+            <div>
+                <h2>Company</h2>
+                <p>About Us</p>
+                <p>Blog</p>
+                <p>Contact Us</p>
+                <p>Pricing</p>
+                <p>Testimonials</p>
+            </div>
+            <div>
+                <h2>Support</h2>
+                <p>Help Center</p>
+                <p>Terms & Conditions</p>
+                <p>Legal</p>
+                <p>Privacy Policy</p>
+                <p>Status</p>
+            </div>
+            <div>
+                <h2>Stay up to date</h2>
+                <input type="text" placeholder="Your email address">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
